@@ -9,4 +9,14 @@ const contrySchema = new mongoose.Schema({
     }
 })
 const country = new mongoose.model("country", contrySchema);
+
+
+
+const addCountry = new country({ 
+            country:"India",
+        })
+        addCountry.save();
+        
+
+
 module.exports=country;

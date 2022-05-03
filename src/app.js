@@ -5,7 +5,7 @@ const register = require("./models/register");
 const country = require("./models/country_schema")
 const state = require(".//models/state_schema");
 const hobbies = require("./models/hobbies_schema")
-const router = require("./routers/CRUD API");
+const router = require("./routers/testAPI");
 
 const port = process.env.PORT || 3000;
 

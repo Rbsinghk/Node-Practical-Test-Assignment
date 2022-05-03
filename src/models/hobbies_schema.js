@@ -9,4 +9,11 @@ const hobbiesSchema = new mongoose.Schema({
     }
 })
 const hobbies = new mongoose.model("hobbies", hobbiesSchema);
+
+    
+const addHobbies = new hobbies({
+    hobbies:"Dance",
+})
+addHobbies.save();
+
 module.exports=hobbies;

@@ -9,4 +9,12 @@ const stateSchema = new mongoose.Schema({
     }
 })
 const state = new mongoose.model("state", stateSchema);
+
+
+const addStates = new state({
+    state:"Gujarat",
+})
+addStates.save();
+
+
 module.exports=state;
