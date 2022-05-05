@@ -1,20 +1,19 @@
 const mongoose = require("mongoose");
 
 const stateSchema = new mongoose.Schema({
-
-    state:{
-        type:String,
-        unique:true,
-        require:true,
-    }
-})
+  name: {
+    type: String,
+    // unique: true,
+  },
+  key:{
+    type: String
+  }
+});
 const state = new mongoose.model("state", stateSchema);
 
+// const addStates = new state({
+//   state: "Gujarat",
+// });
+// await addStates.save();
 
-const addStates = new state({
-    state:"Gujarat",
-})
-addStates.save();
-
-
-module.exports=state;
+module.exports = state;

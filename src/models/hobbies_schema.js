@@ -2,18 +2,18 @@ const mongoose = require("mongoose");
 
 const hobbiesSchema = new mongoose.Schema({
 
-    hobbies:{
+    hobby:{
         type:String,
-        unique:true,
         require:true,
+        // unique:true
     }
 })
-const hobbies = new mongoose.model("hobbies", hobbiesSchema);
+const hobbie = new mongoose.model("hobbie", hobbiesSchema);
 
     
-const addHobbies = new hobbies({
-    hobbies:"Dance",
-})
-addHobbies.save();
+// const addHobbies = new hobbies({
+//     hobbies:"Dance",
+// })
+// await addHobbies.save();
 
-module.exports=hobbies;
+module.exports=hobbie;
